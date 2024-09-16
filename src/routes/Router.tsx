@@ -16,7 +16,7 @@ import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import ContactUs from "@/pages/public/ContactUs";
 import NotFound from "@/pages/public/NotFound";
-import UserManagement from "@/components/Admin/userManagement/userManagement";
+import UserManagement from "@/components/Admin/userManagement/UserManagement";
 
 const router = createBrowserRouter([
   {
