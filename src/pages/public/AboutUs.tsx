@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { FaUsers, FaHistory, FaRocket } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
