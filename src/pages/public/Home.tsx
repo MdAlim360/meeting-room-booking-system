@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-hidden">
       <div className="relative top-[-0px] md:top-[-35px] lg:top-[-0px]">
         <Header />
         <ServiceAdvertisement />
@@ -57,7 +57,7 @@ const Home = () => {
       {showScrollButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-10 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
+          className="fixed bottom-10 right-2 overflow-hidden bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
         >
           <FaArrowUp className="w-5 h-5" />
         </button>
