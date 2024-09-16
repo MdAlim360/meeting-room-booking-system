@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useCallback, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppSelector, useAppDispatch } from "@/redux/hooks";
@@ -61,14 +61,16 @@ const Navbar: React.FC = () => {
       )}
     >
       <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
-        <div className="flex gap-2 items-center">
-          <img
-            className="w-7 h-7"
-            src="https://i.ibb.co.com/bPzThcH/squares.png"
-            alt=""
-          />
-          <div className="text-3xl font-medium">ROYELLA</div>
-        </div>
+        <Link to={"https://meeting-room-booking-system-three.vercel.app/"}>
+          <div className="flex gap-2 items-center">
+            <img
+              className="w-7 h-7"
+              src="https://i.ibb.co.com/bPzThcH/squares.png"
+              alt=""
+            />
+            <div className="text-3xl font-medium">ROYELLA</div>
+          </div>
+        </Link>
         <div className="hidden md:flex space-x-6">
           <LinkList links={links} setIsOpen={setIsOpen} />
           {!user && <AuthLinks setIsOpen={setIsOpen} />}
