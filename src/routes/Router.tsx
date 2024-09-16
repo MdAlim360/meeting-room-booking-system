@@ -16,6 +16,7 @@ import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import ContactUs from "@/pages/public/ContactUs";
 import NotFound from "@/pages/public/NotFound";
+import UserManagement from "@/components/Admin/userManagement/userManagement";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
           {
             path: "bookings",
             element: <BookingManagement />,
+          },
+          {
+            path: "users",
+            element: <UserManagement />,
           },
         ],
       },

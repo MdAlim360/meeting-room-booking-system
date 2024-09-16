@@ -67,11 +67,11 @@ const MeetingRooms = () => {
         {/* Search and Filters Section */}
         <div className="mb-8">
           <div className="flex flex-col sm:flex-row sm:justify-between items-center gap-4">
-            <div className="flex flex-col sm:flex-row sm:space-x-4 w-full sm:w-auto">
-              <div className="relative w-full sm:w-1/3">
+            <div className="flex flex-col gap-2 sm:flex-row sm:space-x-4 w-full sm:w-auto">
+              <div className="relative w-full sm:w-1/3 ">
                 <FaSearch className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Input
-                  placeholder="Search by room name..."
+                  placeholder="Search..."
                   value={searchTerm}
                   onChange={handleSearch}
                   className="p-2 border border-gray-700 rounded-md text-white bg-gray-900 pl-8 w-full"
@@ -85,7 +85,7 @@ const MeetingRooms = () => {
                 className="p-2 border border-gray-700 rounded-md text-white bg-gray-900 w-full sm:w-1/3"
               />
               <Input
-                placeholder="Filter by max price..."
+                placeholder="Filter by price..."
                 type="number"
                 value={priceFilter}
                 onChange={handlePriceFilter}
@@ -97,19 +97,21 @@ const MeetingRooms = () => {
                 onClick={() => handleSortOrder("asc")}
                 className="p-2 bg-green-500 text-white rounded-md hover:bg-green-400 w-full sm:w-auto"
               >
-                <FaSortAmountUp className="inline mr-2" /> Sort Ascending
+                <FaSortAmountUp className="inline mr-2" />
+                Low-High price
               </Button>
               <Button
                 onClick={() => handleSortOrder("desc")}
                 className="p-2 bg-green-500 text-white rounded-md hover:bg-green-400 w-full sm:w-auto mt-2 sm:mt-0"
               >
-                <FaSortAmountDown className="inline mr-2" /> Sort Descending
+                <FaSortAmountDown className="inline mr-2" />
+                Hight-Low price
               </Button>
               <Button
                 onClick={handleClearFilters}
                 className="p-2 bg-red-500 text-white rounded-md hover:bg-red-400 w-full sm:w-auto mt-2 sm:mt-0"
               >
-                Clear Filters
+                Clear
               </Button>
             </div>
           </div>

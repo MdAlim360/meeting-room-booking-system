@@ -36,6 +36,14 @@ const Sidebar = () => (
             <FaCalendarCheck className="mr-2" /> Booking Management
           </Link>
         </li>
+        <li>
+          <Link
+            to="/dashboard/users"
+            className="flex items-center mb-4 text-[10px] md:text-base"
+          >
+            <FaCalendarCheck className="mr-2" /> User Management
+          </Link>
+        </li>
       </ul>
     </nav>
   </aside>
