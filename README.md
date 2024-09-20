@@ -37,7 +37,7 @@ This project provides an efficient way for organizations to manage meeting room 
   - ShadCN (Component library)
   - Framer Motion (Animations)
   - React Icons (Iconography)
-- **Backend:** (if applicable)
+- **Backend:** (applicable only for backend )
   - Typescript
   - Node.js
   - Express.js
@@ -64,10 +64,12 @@ Before installing the project, ensure you have the following installed:
    cd meeting-room-booking-system
    ```
 1. **Install dependencies:**
+
    ```bash
    npm install
 
    ```
+
 1. **Run the development server:**
    ```bash
    npm run dev
