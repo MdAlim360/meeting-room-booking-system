@@ -19,7 +19,7 @@ const RoomCard = ({ roomData }: any) => {
           <h2 className="text-xl font-bold mb-2">{roomData.name}</h2>
           <p className="text-gray-400 mb-2">Capacity: {roomData.capacity}</p>
           <p className="text-gray-400 mb-4">
-            Price Per Slot: ${roomData.pricePerSlot}
+            Price Per Slot: {roomData.pricePerSlot} tk
           </p>
           <Link
             to={`/rooms/${roomData._id}`}
